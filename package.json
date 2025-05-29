@@ -1,7 +1,7 @@
 {
   "name": "art-gallery-website",
   "version": "1.0.0",
-  "description": "![Design preview for the Art gallery website coding challenge](./preview.jpg)",
+  "description": "A responsive landing page for the Modern Art Gallery. Built for a Frontend Mentor challenge to showcase clean layout, semantic HTML, and accessibility, with content highlighting the gallery's mission, visitor experience, and location.",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

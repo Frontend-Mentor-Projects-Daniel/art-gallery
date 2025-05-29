@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: 
+Sitemap: https://gregarious-hotteok-b20fe1.netlify.app/sitemap.xml
