@@ -1,0 +1,23 @@
+{
+  "name": "art-gallery-website",
+  "version": "1.0.0",
+  "description": "![Design preview for the Art gallery website coding challenge](./preview.jpg)",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "author": "Daniel Arzanipour",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Frontend-Mentor-Projects-Daniel/art-gallery.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Frontend-Mentor-Projects-Daniel/art-gallery/issues"
+  },
+  "homepage": "https://github.com/Frontend-Mentor-Projects-Daniel/art-gallery#readme",
+  "devDependencies": {
+    "vite": "^6.3.5"
+  }
+}
