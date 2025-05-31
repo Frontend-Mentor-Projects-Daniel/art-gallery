@@ -2,11 +2,6 @@
   "name": "art-gallery-website",
   "version": "1.0.0",
   "description": "A responsive landing page for the Modern Art Gallery. Built for a Frontend Mentor challenge to showcase clean layout, semantic HTML, and accessibility, with content highlighting the gallery's mission, visitor experience, and location.",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
   "author": "Daniel Arzanipour",
   "license": "ISC",
   "repository": {
@@ -17,7 +12,16 @@
     "url": "https://github.com/Frontend-Mentor-Projects-Daniel/art-gallery/issues"
   },
   "homepage": "https://github.com/Frontend-Mentor-Projects-Daniel/art-gallery#readme",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
   "devDependencies": {
     "vite": "^6.3.5"
+  },
+  "dependencies": {
+    "mustache": "^4.2.0"
   }
 }
