@@ -82,16 +82,191 @@ select {
 }
 
 /*------------------- 
+  CUSTOM VARIABLES
+-------------------*/
+
+:root {
+  /* COLORS */
+  /* brand colors */
+  --color-primary: hsl(24, 56%, 63%);
+
+  /* neutrals */
+  --color-white: hsl(0, 0%, 100%);
+
+  /* grays */
+  --color-gray-700: hsl(0, 0%, 27%);
+  --color-gray-900: hsl(0, 0%, 8%);
+
+  /* SPACING */
+  --spacing-0: 0px;
+  --spacing-025: 2px;
+  --spacing-050: 4px;
+  --spacing-075: 6px;
+  --spacing-100: 8px;
+  --spacing-125: 10px;
+  --spacing-150: 12px;
+  --spacing-200: 16px;
+  --spacing-250: 20px;
+  --spacing-300: 24px;
+  --spacing-400: 32px;
+  --spacing-500: 40px;
+  --spacing-600: 48px;
+  --spacing-800: 64px;
+  --spacing-1000: 80px;
+
+  /* TYPOGRAPHY */
+
+  /* ───────────── Text Preset 1 ─────────────
+     - Big, bold hero headlines
+     - Used for landing headers or top banners
+     - Responsive: 96px (desktop), 70px (tablet), 60px (mobile)
+  */
+  --text-1-font: 'Big Shoulders', sans-serif;
+  --text-1-weight: 900;
+  --text-1-letter-spacing: 0px;
+  --text-1-line-height: 0.9;
+  --text-1-size-desktop: 96px;
+  --text-1-size-tablet: 70px;
+  --text-1-size-mobile: 60px;
+
+  /* ───────────── Text Preset 2 ─────────────
+     - Secondary headings or large CTAs
+     - Less aggressive than preset 1
+     - Responsive: 70px → 55px; Line-height tightens on tablet
+  */
+  --text-2-font: 'Big Shoulders', sans-serif;
+  --text-2-weight: 900;
+  --text-2-letter-spacing: 0px;
+  --text-2-line-height-desktop: 1;
+  --text-2-line-height-tablet: 0.9;
+  --text-2-size-desktop: 70px;
+  --text-2-size-tablet: 55px;
+
+  /* ───────────── Text Preset 3 ─────────────
+     - Large subheadings or card titles
+     - 60px (desktop), 50px (tablet)
+  */
+  --text-3-font: 'Big Shoulders', sans-serif;
+  --text-3-weight: 900;
+  --text-3-letter-spacing: 0px;
+  --text-3-line-height: 1;
+  --text-3-size-desktop: 60px;
+  --text-3-size-tablet: 50px;
+
+  /* ───────────── Text Preset 4 ─────────────
+     - Small bold headers or section labels
+     - Always 36px
+  */
+  --text-4-font: 'Big Shoulders', sans-serif;
+  --text-4-weight: 900;
+  --text-4-letter-spacing: 0px;
+  --text-4-line-height: 1;
+  --text-4-size: 36px;
+
+  /* ───────────── Text Preset 5 ─────────────
+     - Body text, primary paragraph style
+     - Light style, 22px with generous 1.4 line-height
+  */
+  --text-5-font: 'Outfit', sans-serif;
+  --text-5-weight: 300;
+  --text-5-letter-spacing: 0px;
+  --text-5-line-height: 1.4;
+  --text-5-size: 22px;
+
+  /* ───────────── Text Preset 6 ─────────────
+     - Mono-look labels or auxiliary UI text
+     - ExtraBold with wide tracking (3.64px)
+     - Uppercase-friendly, small but loud
+  */
+  --text-6-font: 'Big Shoulders', sans-serif;
+  --text-6-weight: 800;
+  --text-6-letter-spacing: 3.64px;
+  --text-6-line-height: 1;
+  --text-6-size: 20px;
+
+  /* ───────────── Text Preset 7 ─────────────
+     - Secondary body text / small paragraphs
+     - Very readable at 18px with 1.4 line-height
+  */
+  --text-7-font: 'Outfit', sans-serif;
+  --text-7-weight: 300;
+  --text-7-letter-spacing: 0px;
+  --text-7-line-height: 1.4;
+  --text-7-size: 18px;
+
+  /* RADIUS */
+  --radius-0: 0px;
+  --radius-4: 4px;
+  --radius-6: 6px;
+  --radius-8: 8px;
+  --radius-10: 10px;
+  --radius-12: 12px;
+  --radius-16: 16px;
+  --radius-20: 20px;
+  --radius-24: 24px;
+  --radius-full: 999px;
+
+  /* ───────────── BORDER WIDTH ─────────────
+     - For outlines, dividers, card edges, etc.
+  */
+  --border-width-0: 0px;
+  --border-width-1: 1px;
+  --border-width-2: 2px;
+  --border-width-4: 4px;
+  --border-width-8: 8px;
+
+  /* ───────────── BORDER COLOR ─────────────*/
+  --border-color-default: var(--color-gray-700);
+  --border-color-subtle: var(--color-gray-900);
+  --border-color-accent: var(--color-primary);
+
+  /* ───────────── BOX SHADOWS ─────────────
+     - For elevation, focus, overlays
+  */
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.15);
+  --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.2);
+  --shadow-focus: 0 0 0 3px hsl(24, 56%, 63%, 0.5);
+
+  /* ───────────── Z-INDEX ─────────────
+     - Layering control for modal, nav, etc.
+  */
+  --z-index-auto: auto;
+  --z-index-0: 0;
+  --z-index-10: 10;
+  --z-index-20: 20;
+  --z-index-30: 30;
+  --z-index-40: 40;
+  --z-index-50: 50;
+
+  /* ───────────── TRANSITIONS ─────────────
+     - Timing and duration tokens
+  */
+  --transition-fast: 150ms ease-in-out;
+  --transition-normal: 300ms ease-in-out;
+  --transition-slow: 500ms ease-in-out;
+
+  /* ───────────── OPACITY ─────────────
+     - UI states (hover, disabled, overlays)
+  */
+  --opacity-0: 0;
+  --opacity-25: 0.25;
+  --opacity-50: 0.5;
+  --opacity-75: 0.75;
+  --opacity-100: 1;
+}
+
+/*------------------- 
        GLOBAL
 -------------------*/
 
 body {
-  font-family: 'Outfit', sans-serif;
   font-optical-sizing: auto;
 }
 
 h1 {
-  font-family: 'Big Shoulders', sans-serif;
   font-optical-sizing: auto;
 }
 
