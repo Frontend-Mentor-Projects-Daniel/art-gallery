@@ -6,13 +6,13 @@ const data = {
 };
 
 Promise.all([
-  fetch('../pages/partials/header.html').then((res) => res.text()),
-  fetch('../pages/partials/footer.html').then((res) => res.text()),
-  fetch('../pages/location-page.html').then((res) => res.text()),
+  fetch('/partials/header.html').then((res) => res.text()),
+  fetch('/partials/footer.html').then((res) => res.text()),
+  fetch('location-page.html').then((res) => res.text()),
 ]).then(([header, footer, locationPage]) => {
   const rendered = mustache.render(
     locationPage,
-    { name: 'Daniel', ...data },
+    { data },
     {
       header,
       footer,

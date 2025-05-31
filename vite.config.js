@@ -6,6 +6,12 @@ export default defineConfig({
     outDir: 'dist',
     emptyOutDir: true,
     assetsDir: 'public/assets',
+    rollupOptions: {
+      input: {
+        main: 'index.html',
+        location: 'location-page.html',
+      },
+    },
   },
   server: {
     open: true,

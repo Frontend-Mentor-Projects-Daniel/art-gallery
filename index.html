@@ -51,14 +51,17 @@
     />
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="./src/styles/main.css" />
+    <link rel="stylesheet" href="/src/styles/main.css" />
 
     <!-- Scripts -->
-    <script type="module" src="./src/scripts/index.js" defer></script>
+    <script type="module" src="/src/scripts/index.js" defer></script>
   </head>
   <body>
-    <!-- <div id="root"></div> -->
+    {{> header }}
+
     <h1>Homepage</h1>
-    <a href="./src/pages/location-page.html">Location Page</a>
+    <a href="location-page.html">Location Page</a>
+
+    {{> footer }}
   </body>
 </html>
